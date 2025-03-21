@@ -21,11 +21,11 @@ query that user is trying to do without give the full control of the query to th
 3. Run the project using the command `mvn spring-boot:run`
 4. Access the API using the URLs below
 
-| HTTP Method | Endpoint           | Description                                 |
-|-------------|--------------------|---------------------------------------------|
-| GET         | /cookies           | Retrieve all cookies (without AI)           |
-| GET         | /cookies/available | Retrieve all cookies available (without AI) |
-| POST        | /cookies-ai?query= | Retrieve all cookies filtered (with AI)     |
+| HTTP Method | Endpoint           | Description                                  |
+|-------------|--------------------|----------------------------------------------|
+| GET         | /cookies           | Retrieve all cookies (without AI)            |
+| GET         | /cookies/available | Retrieve all cookies available (without AI)  |
+| GET         | /cookies-ai?query= | Retrieve all cookies filtered (with AI)      |
 
 ## Example
 1. Retrieve all cookies
@@ -40,5 +40,5 @@ curl -X GET http://localhost:8080/cookies/available
 
 3. Retrieve all cookies filtered
 ```bash
-curl -X POST http://localhost:8080/cookies-ai?query=show me all cookies available
+curl -X GET http://localhost:8080/cookies-ai?query=show me all cookies available
 ```
